@@ -9,25 +9,18 @@ const { pageTitle } = Astro.props;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width" />
     <meta name="generator" content={Astro.generator} />
-    <title class="text-black">{pageTitle}</title>
+    <title>{pageTitle}</title>
   </head>
-  <body
-    class="font-inter selection:bg-red-500/70 text-xl"
-  >
-    <div
-      class="w-1/2 mx-auto p-10 bg-white/60 backdrop-blur-xl"
-    >
+  <body class="font-inter selection:bg-red-500/70 text-xl">
+    <div class="w-1/2 mx-auto p-10">
       <Header />
-      <h1 class="text-teal-500">{pageTitle}</h1>
+      <h1 class="text-red-500 font-black text-center text-2xl">{pageTitle}</h1>
       <div class="m-10">
-        <div class="p-5 bg-slate-200">
+        <div class="p-10 m-5 bg-red-50 rounded-sm">
           <slot />
         </div>
       </div>
       <Footer />
     </div>
-    <script>
-      import "../scripts/menu.js";
-    </script>
   </body>
 </html>
