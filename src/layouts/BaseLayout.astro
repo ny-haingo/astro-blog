@@ -11,13 +11,17 @@ const { pageTitle } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
   </head>
-  <body class="font-inter selection:bg-red-500/70 text-xl">
-    <div class="w-1/2 mx-auto p-10">
-      <Header />
-      <h1 class="text-red-500 font-black text-center text-2xl">{pageTitle}</h1>
-      <div class="m-10">
-        <div class="p-10 m-5 bg-red-50 rounded-sm">
-          <slot />
+  <body class="selection:bg-slate-500/70 text-xl">
+    <div class="mx-auto p-10 min-h-screen flex flex-col">
+      <div class="flex-grow">
+        <Header />
+        <h1 class="text-slate-500 font-black text-center text-2xl">
+          {pageTitle}
+        </h1>
+        <div class="m-10">
+          <div class="p-10 m-5 bg-slate-50 rounded-xl">
+            <slot />
+          </div>
         </div>
       </div>
       <Footer />

@@ -1,9 +1,11 @@
 ---
-const navstyle: string = "font-black p-3 hover:text-teal-700";
+const navstyle: string = "font-black hover:text-teal-700";
 ---
 
-<div class="text-center pb-5">
-  <a class={navstyle} href="/">Home</a>
-  <a class={navstyle} href="/about">About</a>
-  <a class={navstyle} href="/blog">Blog</a>
+<div class="pb-5">
+  <div class="flex justify-around p-5 m-2 border rounded-md rounded-t-xl">
+    <a class={navstyle} href="/">Home</a>
+    <a class={navstyle} href="/about">About</a>
+    <a class={navstyle} href="/blog">Blog</a>
+  </div>
 </div>
