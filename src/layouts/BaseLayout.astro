@@ -11,15 +11,21 @@ const { pageTitle } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title class="text-black">{pageTitle}</title>
   </head>
-  <body>
-    <Header />
-    <h1 class="text-teal-500">{pageTitle}</h1>
-   <div class="m-10">
-    <div class="p-5 bg-slate-200">
-      <slot />
+  <body
+    class="font-inter selection:bg-red-500/70 text-xl"
+  >
+    <div
+      class="w-1/2 mx-auto p-10 bg-white/60 backdrop-blur-xl"
+    >
+      <Header />
+      <h1 class="text-teal-500">{pageTitle}</h1>
+      <div class="m-10">
+        <div class="p-5 bg-slate-200">
+          <slot />
+        </div>
+      </div>
+      <Footer />
     </div>
-   </div>
-    <Footer />
     <script>
       import "../scripts/menu.js";
     </script>
