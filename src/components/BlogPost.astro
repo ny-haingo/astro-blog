@@ -2,4 +2,6 @@
 const { title, url } = Astro.props;
 ---
 
-<li><a href={url}>{title}</a></li>
+<div class="m-5 p-5 border shadow-lg hover:bg-red-50">
+  <a href={url}>{title}</a>
+</div>
