@@ -15,11 +15,13 @@ const { pageTitle } = Astro.props;
     <div class="mx-auto p-10 min-h-screen flex flex-col">
       <div class="flex-grow">
         <Header />
-        <h1 class="text-slate-500 font-black text-center text-2xl">
+        <h1 class="text-black font-black text-center text-2xl">
           {pageTitle}
         </h1>
         <div class="m-10">
-          <div class="p-10 m-5 bg-slate-50 rounded-xl">
+          <div
+            class="p-10 m-5 bg-gradient-to-b from-red-50 to-white "
+          >
             <slot />
           </div>
         </div>
