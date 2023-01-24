@@ -2,8 +2,14 @@
 const { title, url } = Astro.props;
 ---
 
-<div
-  class="m-5 p-5 hover:-translate-y-1 duration-300 hover:shadow-md hover:bg-red-500 hover:text-white backdrop-blur-sm rounded-lg bg-white/70"
+<div class="p-2">
+  <div
+  class="hover:border-blue-500 p-5 hover:border-2 bg-white"
 >
-  <a href={url}>{title}</a>
+  <a href={url}>
+    <p>
+      {title}
+    </p>
+  </a>
+</div>
 </div>
